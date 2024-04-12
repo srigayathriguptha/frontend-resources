@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+/* @font-face {
+font-family: ‘PAPYRUS’;
+src: url(‘http://moeinc.us/wp-content/themes/x-child/fonts/PAPYRUS.eot’) format(‘eot’);
+url(‘http://moeinc.us/wp-content/themes/x-child/fonts/PAPYRUS.woff’) format(‘woff’),
+url(‘http://moeinc.us/wp-content/themes/x-child/fonts/PAPYRUS.ttf’) format(‘truetype’),
+url(‘http://moeinc.us/wp-content/themes/x-child/fonts/PAPYRUS.svg’) format(‘svg’);
+} */
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.main-background{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210717/pngtree-aesthetic-background-pink-pastel-image_746353.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* padding: 0;
+    margin: 0; */
+}
+.heading-style{
+    font-family: 'Papyrus';
+    color: rgb(43, 42, 42);
+    padding: 24px;
+}
+.heading{
+    padding: 20px;
+}
+.sub-heading-style{
+    color: rgb(43, 42, 42);
+    font-family: 'Lucida Handwriting';
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+.paragraph-style{
+    padding-top: 20px;
+}
+.card-container{
+    height: 40vh;
+    width: 20vw;
+    background-color: #dbafb7;
+    font-family: 'Papyrus';
+    margin: 30px;
+    padding: 28px;
+    border-radius: 16px;
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    /* width: 100px; */
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* #dbafb7 */
+/* #c99fa6 */
+
+
+@media (max-width: 768px){
+
+    .main-background{
+    padding-bottom: 30px;
+    margin: 0;
+}
+    
+    .heading ,h3, h4{
+        font-size: 20px;
+
+    }
+    .heading{
+        padding: 12px;
+    }
+    .card-container{
+        height: 50%;
+        width: 85%;
+        margin-bottom: 0;
+    }
+    .row-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .tab-row-container{
+        margin-bottom: 0;
+    }
+
+}
+@media only screen and ( min-width: 768px){
+    .row-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .column-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tab-row-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card-container{
+        height: 25vh;
+        width: 80vw;
+        /* margin: 18px; */
+    }
+}
+@media only screen and (min-width: 992px){
+    .row-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .column-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tab-row-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+    .card-container{
+        height: 40vh;
+        width: 20vw;
+        background-color: #dbafb7;
+        font-family: 'Papyrus';
+        margin: 30px;
+        padding: 24px;
+        border-radius: 16px;
+    }
+}
